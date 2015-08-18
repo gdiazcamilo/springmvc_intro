@@ -1,0 +1,28 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+  <head>
+    <title>Good Thymes Virtual Grocery</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+
+  <body>
+	<form th:object="${exercise}">
+		<table>
+			<tr>
+				<td>Minutes Exercised Today:</td>
+				<td><input type="text" th:field="*{minutes}" /></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="submit" value="Enter exercise" />
+				</td>
+			</tr>
+		</table>
+	</form>
+  
+  </body>
+
+</html>
