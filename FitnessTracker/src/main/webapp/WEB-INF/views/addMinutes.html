@@ -12,7 +12,7 @@
 	<form th:object="${exercise}">
 		<table>
 			<tr>
-				<td>Minutes Exercised Today:</td>
+				<td th:text="#{hello.world}">Mensaje</td>
 				<td><input type="text" th:field="*{minutes}" /></td>
 			</tr>
 			<tr>
